@@ -14,24 +14,28 @@
       href="https://fonts.googleapis.com/css?family=Lato|Staatliches"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/MyNewsGrid/css/styles.css" />
-    <link rel="stylesheet" href="/MyNewsGrid/css/mobile.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>News Grid | Latest News</title>
   </head>
   <body>
     <nav id="main-nav">
       <div class="container">
-        <img src="./img/logo.png" alt="news grid" class="logo" />
+        <img src="img/logo.png" alt="NewsGrid" class="logo" />
         <div class="social">
-          <a href="http://facebook.com">
-            <i class="fab fa-facebook fa-2x"></i
+          <a href="http://facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
           ></a>
-          <a href="http://twitter.com"> <i class="fab fa-twitter fa-2x"></i></a>
-          <a href="http://instagram.com">
-            <i class="fab fa-instagram fa-2x"></i
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
           ></a>
-          <a href="http://youtube.com"> <i class="fab fa-youtube fa-2x"></i></a>
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="http://youtube.com" target="_blank"
+            ><i class="fab fa-youtube fa-2x"></i
+          ></a>
         </div>
         <ul>
           <li><a class="current" href="index.html">Home</a></li>
@@ -40,18 +44,19 @@
       </div>
     </nav>
 
+    <!--Showcase-->
     <header id="showcase">
       <div class="container">
         <div class="showcase-container">
           <div class="showcase-content">
-            <div class="category category-sports">sports</div>
+            <div class="category category-sports">Sports</div>
             <h1>Some Sports Article</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              maiores aut omnis pariatur laudantium hic adipisci voluptate
-              ratione asperiores voluptatum libero ipsam reprehenderit
-              similique, autem fugiat id incidunt officia fuga eligendi rem,
-              deleniti repellendus unde iste? Eveniet vel nihil eaque!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, reiciendis corporis, voluptas excepturi perspiciatis
+              culpa illo ipsam explicabo nam quo debitis deleniti ipsa eligendi
+              corrupti tempora non unde officiis! Culpa quod mollitia minima
+              officiis delectus explicabo dolorem distinctio? Eum, dolores.
             </p>
             <a href="article.html" class="btn btn-primary">Read More</a>
           </div>
@@ -59,153 +64,156 @@
       </div>
     </header>
 
-    <div class="container">
-      <h1>editor picks</h1>
-      <section id="articles">
-        <div class="flex-1 article-bglight">
-          <div>
+    <!-- Home Articles -->
+
+    <section id="home-articles" class="py-2">
+      <div class="container">
+        <h2>Editor Picks</h2>
+        <div class="articles-container">
+          <article class="card">
+            <!-- This will be a grid container -->
             <img src="./img/articles/ent1.jpg" alt="" />
-          </div>
-          <div class="padding-ent">
-            <div class="category category-ent">entertainment</div>
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae omnis laborum ipsa, impedit adipisci repudiandae
-              asperiores libero a cumque ipsam.
-            </p>
-          </div>
-        </div>
-        <div class="padding-sport dark-color txt-light">
-          <div class="category category-sports">sports</div>
-          <h1>Lorem ipsum dolor sit.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aperiam aut soluta nostrum fuga eveniet quae. Possimus praesentium
-            dolor natus.
-          </p>
-        </div>
+            <!-- One Grid Item -->
+            <div>
+              <div class="category category-ent">entertainment</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
+          </article>
 
-        <div class="article-bglight">
-          <div>
+          <article class="card bg-dark">
+            <div>
+              <div class="category category-sports">sports</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
             <img src="./img/articles/tech1.jpg" alt="" />
-          </div>
-          <div class="padding-tech">
-            <div class="category category-tech">entertainment</div>
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae omnis laborum ipsa, impedit adipisci repudiandae
-              asperiores libero a cumque ipsam.
-            </p>
-          </div>
-        </div>
 
-        <div class="article-bglight">
-          <div class="padding-sport">
-            <div class="category category-sports">sport</div>
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae omnis laborum ipsa, impedit adipisci repudiandae
-              asperiores libero a cumque ipsam.
-            </p>
-          </div>
-          <div>
+            <div>
+              <div class="category category-tech">technology</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="category category-sports">sports</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
             <img src="./img/articles/sports1.jpg" alt="" />
-          </div>
-        </div>
+          </article>
 
-        <div class="article-bglight">
-          <div>
+          <article class="card">
             <img src="./img/articles/tech2.jpg" alt="" />
-          </div>
-          <div class="padding-tech">
-            <div class="category category-tech">entertainment</div>
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae omnis laborum ipsa, impedit adipisci repudiandae
-              asperiores libero a cumque ipsam.
-            </p>
-          </div>
-        </div>
 
-        <div class="padding-sport bg-primary txt-light">
-          <div class="category category-sports">sports</div>
-          <h1>Lorem ipsum dolor sit.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            aperiam aut soluta nostrum fuga eveniet quae. Possimus praesentium
-            dolor natus.
-          </p>
-        </div>
+            <div>
+              <div class="category category-tech">technology</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
+          </article>
 
-        <div class="flex-2 article-bglight">
-          <div>
+          <article class="card bg-primary">
+            <div>
+              <div class="category category-sports">sports</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div>
+              <div class="category category-ent">entertainment</div>
+              <h3><a href="article.html">Lorem ipsum dolor sit amet.</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident aspernatur fugiat ducimus facilis adipisci tenetur,
+                voluptatem ipsum quam consectetur. Voluptatibus?
+              </p>
+            </div>
             <img src="./img/articles/ent2.jpg" alt="" />
-          </div>
-          <div class="padding-ent">
-            <div class="category category-ent">entertainment</div>
-            <h1>Lorem ipsum dolor sit.</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae omnis laborum ipsa, impedit adipisci repudiandae
-              asperiores libero a cumque ipsam.
-            </p>
-          </div>
+          </article>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark txt-light">
+    <footer class="main-footer">
       <div class="container">
-        <div class="footer-container">
-          <div class="footer-col column-1">
+        <div class="footer-grid">
+          <div>
             <img src="./img/logo_light.png" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Temporibus tempora quam fuga iusto dolorum perspiciatis
-              necessitatibus similique accusantium et esse.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              aperiam provident placeat? Rerum, quos veritatis itaque tempora
+              maxime voluptas aspernatur.
             </p>
           </div>
-          <div class="footer-col column-2">
-            <h2>Email Newsletter</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-            <form action="process.php">
-              <div class="form-control">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter Email"
-                />
-                <input class="btn" type="button" value="Subscribe" />
-              </div>
-            </form>
+          <div class="news-letter">
+            <h3>EMAILNEWSLETTER</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              ab!
+            </p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email..."
+            /><br />
+            <a href="#" class="btn btn-primary">Subscribe</a>
           </div>
-          <div class="footer-col column-3">
-            <h2>Site Links</h2>
-            <ul>
-              <li><a href="#"></a>Help & Support</li>
-              <li><a href="#"></a>Privacy Policy</li>
+
+          <div>
+            <h3>SITE LINKS</h3>
+            <ul class="side-menu">
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="footer-col column-4">
-            <h2>Join Our Club</h2>
+
+          <div>
+            <h2>JOIN OUR CLUB</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+              tempore.
             </p>
             <a href="#" class="btn btn-secondary">Join Now</a>
           </div>
         </div>
-        <div class="item-5 text-light">
-          <p>Copyright &copy; 2022, All Rights Reserved</p>
+        <div class="secondary-footer">
+          <p>Copyright &copy; 2022, All Right Reserved</p>
         </div>
       </div>
     </footer>
